@@ -12,7 +12,7 @@ const { userRouter } = require("./routes/user.route");
 
 app.use(
   cors({
-    origin: "http://localhost:5174",
+    origin: process.env.CLIENT_URL,
     credentials: true,
   }),
 );
